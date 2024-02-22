@@ -1,5 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/image';
+import 'bootstrap/dist/css/bootstrap.css';
+
 const MainGridHome = () => {
 return (
 <div className="container overflow-hidden">
@@ -8,9 +10,7 @@ return (
 <div className="p-3 border bg-light">
 <Image
 
-src="https://res.cloudinary.com/iset-sfax/image/upload/v1703754747/images/3bcafa912d646c6cad059740c23417a151ee2f62_
-
-site_web_3_G_zyzqam.webp"
+src="https://res.cloudinary.com/iset-sfax/image/upload/v1703754747/images/3bcafa912d646c6cad059740c23417a151ee2f62_site_web_3_G_zyzqam.webp"
 width={700}
 height={500}
 alt="Picture"
@@ -21,9 +21,7 @@ alt="Picture"
 <div className="p-3 border bg-light">
 <Image
 
-src="https://res.cloudinary.com/iset-sfax/image/upload/v1703754771/images/52a42c70c1b9ba723650d7348b8fb882b4399c38_
-
-site_web_2_G_xjp4uc.webp"
+src="https://res.cloudinary.com/iset-sfax/image/upload/v1703754771/images/52a42c70c1b9ba723650d7348b8fb882b4399c38_site_web_2_G_xjp4uc.webp"
 width={700}
 height={500}
 alt="Picture"

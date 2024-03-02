@@ -12,7 +12,7 @@ return (
   <>
       <Navbar bg="dark" data-bs-theme="dark" fixed='top'>
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">BB Shop</Navbar.Brand>
           <Nav className="me-auto">
           <Nav.Link as={Link} href="/"><HomeIcon/>Home</Nav.Link>    
           <Nav.Link as={Link} href="/"><AccountCircleIcon/>Se connecter</Nav.Link>             

@@ -5,15 +5,15 @@ fetch('https://apigenerator.dronahq.com/api/R38G3DIh/questionsReponses')
 if (!res.ok) {
 throw new Error('Failed to fetch data')
 }
-return res.json()
+console.log(res)
+return res.json();
 }
 const page = async() => {
 const data = await getData()
 return (
 <>
 <h1>Questions fréquentes</h1>
-{data && data.length>0 && data.map((res,i)=> <div className="p-3 border
-bg-light" key={i}>
+{data && data.length>0 && data.map((res,i)=> <div className="p-3 borderbg-light" key={i}>
 <div className="card">
 <div className="card-header"> {res.question}</div>
 <div className="card-body"> {res.reponse}</div>

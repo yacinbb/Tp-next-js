@@ -8,7 +8,6 @@ function ControlledCarousel() {
     setIndex(selectedIndex);
     };
     const tabSliders = [
-
         {src: "https://res.cloudinary.com/iset-sfax/image/upload/v1703754829/images/pc_portable_cz8v2b.jpg"},
         
         {src: "https://res.cloudinary.com/iset-sfax/image/upload/v1703754821/images/gaer_banniere_40_g1ktuz.jpg"},
@@ -16,7 +15,6 @@ function ControlledCarousel() {
         {src: "https://res.cloudinary.com/iset-sfax/image/upload/v1703754784/images/Banner-2-Code-Promo_smhykd.jpg"},
         
         {src: "https://res.cloudinary.com/iset-sfax/image/upload/v1703754792/images/banniere_smartphone_1_p0ftki.jpg"}
-        
         ]
         return (
             <Carousel activeIndex={index} onSelect={handleSelect}>

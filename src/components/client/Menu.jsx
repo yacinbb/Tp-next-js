@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 function Menu() {
 return (
   <>
-      <Navbar bg="dark" data-bs-theme="dark" fixed='top'>
+      <Navbar bg="dark" data-bs-theme="dark" >
         <Container>
           <Navbar.Brand href="#home">BB Shop</Navbar.Brand>
           <Nav className="me-auto">

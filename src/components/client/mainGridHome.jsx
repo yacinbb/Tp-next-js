@@ -9,9 +9,7 @@ return (
 <div className="col-6">
 <div className="p-3 border bg-light">
 <Image
-
-src="https://res.cloudinary.com/iset-sfax/image/upload/v1703754747/images/3bcafa912d646c6cad059740c23417a151ee2f62_site_web_3_G_zyzqam.webp"
-width={700}
+src="https://res.cloudinary.com/iset-sfax/image/upload/v1703754747/images/3bcafa912d646c6cad059740c23417a151ee2f62_site_web_3_G_zyzqam.webp" width={700}
 height={500}
 alt="Picture"
 />

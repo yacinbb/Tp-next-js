@@ -7,10 +7,9 @@ import Button from 'react-bootstrap/Button';
 import {deleteArticle} from "@/services/ArticleService"
 import { useRouter } from "next/navigation";
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-
 import Link from 'next/link';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-
+import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 const Listproducts = ({produits}) => {
 const router = useRouter();
 const deletearticle=(id)=>{
@@ -78,6 +77,15 @@ size: 100,
 Cell: ({ cell, row }) => (
 <div >
 <Button
+size="md"
+className="text-primary btn-link edit"
+>
+<Link href={`/admin/products/updateProduct/${cell.row.original._id}`}>
+<EditOutlinedIcon/>
+</Link>
+</Button>
+
+<Button
 onClick={(e) => {
 deletearticle(cell.row.original._id,e);
 }}
@@ -100,7 +108,7 @@ return (
     size="sm"
     >
     <Link
-    href="/admin/products/newProduct"
+    href="/admin/products/newProducts"
     style={{
     textDecoration: 'none',
     color: 'aqua',

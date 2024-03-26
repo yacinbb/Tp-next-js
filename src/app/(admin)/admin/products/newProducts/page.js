@@ -6,11 +6,9 @@ const data=await fetchSCategories()
 return data;
 }
 const NewProductPage = async() => {
-const scategories=await getscategories()
+const scategories = await getscategories()
 return (
-<div>
-<NewProduct scategories={scategories}/>
-</div>
+<div><NewProduct scategories={scategories}/></div>
 )
 }
 export default NewProductPage

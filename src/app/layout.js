@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Menu from '@/components/client/Menu';
+import AuthProvider from './providers/authProvider';
 const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
 title: 'Create Next App',
@@ -10,8 +11,10 @@ export default function RootLayout({ children }) {
 return (
 <html lang="en">
 <body className={inter.className}>
+    <AuthProvider>
 <Menu/>
 {children}
+    </AuthProvider>
 </body>
 </html>
 )
